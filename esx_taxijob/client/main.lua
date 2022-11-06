@@ -85,16 +85,16 @@ function ClearCurrentMission()
 end
 
 function StartTaxiJob()
-    exports["B1-skillz"]:CheckSkill("Kierowca", 5, function(hasskill)
-        if hasskill then
-            print('Gracz posiada 5% statystyki : Kierowca')
+    --exports["B1-skillz"]:CheckSkill("Kierowca", 5, function(hasskill)
+        --if hasskill then
+           -- print('Gracz posiada 5% statystyki : Kierowca')
             ShowLoadingPromt(_U('taking_service'), 5000, 3)
             ClearCurrentMission()
             OnJob = true
-        else
-            exports['Astro-NotifySystem']:Notify('error', 'Nie masz 5% statystyki kierowcy!')
-        end
-    end)
+       -- else
+           -- exports['Astro-NotifySystem']:Notify('error', 'Nie masz 5% statystyki kierowcy!')
+        --end
+    --end)
 end
 
 function StopTaxiJob()

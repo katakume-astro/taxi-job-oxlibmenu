@@ -148,7 +148,7 @@ end
 function OpenVehicleSpawnerMenu()
         lib.registerContext({
             id = 'context:taxipojazd',
-            title = 'Moje dokumenty',
+            title = 'Moje pojazdy',
             options = {
                 {
                     title = 'Wyjmij pojazd',
